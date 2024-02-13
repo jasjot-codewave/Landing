@@ -1,113 +1,91 @@
 import Image from "next/image";
 
+import path from "./Assets/Images/path.svg";
+import designer from "./Assets/Images/designer.svg";
+import icon1 from "./Assets/Icons/1.png";
+import features from "./Assets/Images/features.svg";
+import feature1 from "./Assets/Images/feature-1.svg";
+import feature2 from "./Assets/Images/feature-2.svg";
+import feature3 from "./Assets/Images/feature-3.svg";
+import path2 from "./Assets/Images/path-2.svg";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="bg-white w-full relative min-h-screen overflow-hidden flex justify-between items-center">
+        <Image src={path} className="absolute -top-0 -right-28 h-full" />
+        <div className="w-[90%] max-w-[1100px] m-auto xl:my-60 xl:block flex justify-center items-center flex-col gap-20 relative">
+          <div className="xl:w-1/2">
+            <h1 className="text-5xl text-[#091133] font-medium leading-[66px]">Introduce Your Product Quickly & Effectively</h1>
+            <p className="my-4 text-lg leading-8 text-[#505F98]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            <div className="flex items-center gap-8 xl:mt-20 mt-10">
+              <button className="w-[180px] text-center text-base leading-7 border-[#091133] border-2 bg-[#111B47] text-white font-medium rounded-sm">Purchase UI Kit</button>
+              <button className="border-[#091133] border-2 rounded-sm w-[180px] text-center text-base leading-7 font-medium">Learn More</button>
+            </div>
+          </div>
+          <Image src={designer} className="xl:absolute xl:top-[50%] xl:translate-y-[-50%] xl:right-0 w-xl:[40%] w-[50%] m-auto relative" />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+      <section className="bg-white w-[90%] max-w-[1100px] m-auto lg:py-20 py-10 flex justify-center items-center">
+        <div className="w-1/2">
+          <h2 className="text-[#091133] lg:text-4xl text-2xl lg:leading-[48px] my-5 font-semibold">Light, Fast & Powerful</h2>
+          <p className="text-[#6F7CB2] lg:text-base text-sm lg:leading-[28px] my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div className="flex justify-center items-center w-full mt-20">
+            <div className="w-1/2">
+              <Image src={icon1} className="w-[36px] h-[36px]" />
+              <p className="lg:text-base tetx-sm lg:leading-[28px] font-semibold text-[#091133] my-1">Title Goes Here</p>
+              <p className="lg:text-xs text-[10px] lg:leading-[18px] text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+            </div>
+            <div className="w-1/2">
+              <Image src={icon1} className="w-[36px] h-[36px]" />
+              <p className="lg:text-base tetx-sm lg:leading-[28px] font-semibold text-[#091133] my-1">Title Goes Here</p>
+              <p className="lg:text-xs text-[10px] lg:leading-[18px] text-[#5D6970]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <Image src={features} className="w-full aspect-square" />
+        </div>
+      </section>
+      <section className="bg-white w-[90%] max-w-[1100px] m-auto lg:py-20 py-10 flex justify-center items-center">
+        <div className="w-1/2 lg:px-14 px-5">
+          <Image src={feature1} className="w-full h-auto" />
+        </div>
+        <div className="w-1/2 lg:px-14 px-5">
+          <h2 className="text-[#091133] lg:text-4xl text-2xl lg:leading-[48px] my-5 font-semibold">Light, Fast & Powerful</h2>
+          <p className="text-[#6F7CB2] lg:text-base text-sm lg:leading-[28px] my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+      </section>
+      <section className="bg-white w-[90%] max-w-[1100px] m-auto py-20 flex justify-center items-center">
+        <div className="w-1/2 lg:px-14 px-5">
+          <Image src={feature2} className="w-full h-auto" />
+        </div>
+        <div className="w-1/2 lg:px-14 px-5">
+          <h2 className="text-[#091133] lg:text-4xl text-2xl lg:leading-[48px] my-5 font-semibold">Light, Fast & Powerful</h2>
+          <p className="text-[#6F7CB2] lg:text-base text-sm lg:leading-[28px] my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+      </section>
+      <section className="bg-white w-[90%] max-w-[1100px] m-auto py-20 flex justify-center items-center">
+        <div className="w-1/2 lg:px-14 px-5">
+          <Image src={feature3} className="w-full h-auto" />
+        </div>
+        <div className="w-1/2 lg:px-14 px-5">
+          <h2 className="text-[#091133] lg:text-4xl text-2xl lg:leading-[48px] my-5 font-semibold">Light, Fast & Powerful</h2>
+          <p className="text-[#6F7CB2] lg:text-base text-sm lg:leading-[28px] my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <button className="text-white bg-[#111B47] px-8 py-2 rounded-sm text-sm mt-5">Purchase Now</button>
+        </div>
+      </section>
+      <section className="bg-white w-full relative min-h-screen overflow-hidden">
+        <Image src={path2} className="w-full absolute top-0 left-0" />
+        <div className="flex flex-col justify-center items-center w-[90%] max-w-[650px] m-auto min-h-screen text-center relative">
+          <h2 className="text-[#091133] text-4xl leading-[48px] my-5 font-semibold">A Price To Suit Everyone</h2>
+          <p className="text-[#6F7CB2] text-base leading-[28px] my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+          <h1 className="text-[#222F65] text-5xl leading-[66px] tracking-[1px] mt-8 font-bold">$40</h1>
+          <p className="text-[#37447E] text-base">UI Design Kit</p>
+          <p className="text-[#5D6970] text-sm leading-6 mt-10">See, One price. Simple.</p>
+          <button className="text-white bg-[#111B47] px-8 py-2 rounded-sm text-sm mt-2">Purchase Now</button>
+        </div>
+      </section>
+    </>
   );
 }
