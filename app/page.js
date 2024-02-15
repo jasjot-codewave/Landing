@@ -12,9 +12,9 @@ import path2 from "./Assets/Images/path-2.png";
 export default function Home() {
   return (
     <>
-      <section className="bg-white w-full relative pt-28 sm:pt-40 xl:py-0 xl:min-h-screen overflow-hidden flex justify-between items-center">
+      <section className="bg-white w-full relative pt-28 sm:pt-40 xl:py-0 xl:min-h-screen overflow-hidden">
         <Image alt="" src={path} className="absolute -top-0 -right-28 h-full" />
-        <div className="w-[90%] max-w-[1100px] m-auto xl:my-60 xl:block flex justify-center items-center flex-col gap-20 relative">
+        <div className="w-[90%] max-w-[1100px] m-auto xl:my-60 relative">
           <div className="xl:w-1/2 text-center xl:text-left">
             <h1 className="xl:text-5xl text-3xl text-[#091133] font-medium xl:leading-[66px]">Introduce Your Product Quickly & Effectively</h1>
             <p className="my-4 xl:text-lg text-base xl:leading-8 text-[#505F98]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
@@ -23,8 +23,8 @@ export default function Home() {
               <button className="border-[#091133] border-2 rounded-sm w-[180px] text-center text-base leading-7 font-medium">Learn More</button>
             </div>
           </div>
-          <Image alt="" src={designer} className="xl:absolute xl:top-[50%] xl:translate-y-[-50%] xl:right-0 w-xl:[40%] w-[50%] m-auto relative" />
         </div>
+        <Image alt="" src={designer} className="xl:absolute xl:top-[50%] xl:translate-y-[-50%] xl:right-0 xl:w-[40%] w-[50%] m-auto relative mt-20 xl:mt-0" />
       </section>
       <section className="bg-white w-[90%] max-w-[1100px] m-auto lg:py-20 py-10 md:flex justify-center items-center">
         <div className="md:w-1/2">
